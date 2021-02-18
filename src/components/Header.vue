@@ -1,6 +1,7 @@
 <template>
     <header>
         <a href="#home" class="logo">Save 100k</a>
+        <button class="cta-btn">Save </button>
         <div class="toggle" onclick="toggleMenu();"></div>
         <ul class="menu">
             <li><a href="#home" onclick="toggleMenu();">Home</a></li>
@@ -22,7 +23,6 @@ header{
     justify-content: space-between;
     align-items: center;
     transition: 0.5s;
-    background: #111;
 }
 
 header.sticky{
@@ -57,16 +57,26 @@ header ul li a{
     color: #fff;
     text-decoration: none;
 }
-a:hover {
-  color: #85bb65
-}
 header.sticky ul li a{
 color: #111;
 }
+
+.cta-btn {
+    position: relative;
+    background: var(--primary-color);
+    display: inline-block;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+    cursor: pointer;
+    left: 100px;
+}
+.cta-btn:hover {
+    color: var(--secondary-color);
+}
 </style>
 
-<script>
-export default {
-   
-}
-</script>

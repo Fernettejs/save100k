@@ -31,12 +31,20 @@ export default {
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    --primary-color:#628d49;
+    --secondary-color:#ffbd6e;
+
+
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: Avenir, Helvetica, Arial, sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, a, button{
+    font-family: "Press Start 2P"
 }
 
 section{
